@@ -6,7 +6,8 @@ Codes for the published paper on AIAA Aviation Forum 2023
 [[video]](https://doi.org/10.2514/6.2023-3471.vid)
 
 ## Dependencies
-TODO
+Please refer to [requirements.txt]() for the packages needed for this project. Please note that 
+the codes use NVIDIA GPU and Pytorch for acceleration by default.
 
 ## Get Started
 TODO
