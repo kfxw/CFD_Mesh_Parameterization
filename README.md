@@ -10,7 +10,19 @@ Please refer to [requirements.txt]() for the packages needed for this project. P
 the codes use NVIDIA GPU and Pytorch for acceleration by default.
 
 ## Get Started
-TODO
+We provide commands so that you can try out DMM and LSM models in a few minutes.
+
+```
+# to obtain a DMM model that parameterizes NACA-3414
+mkdir exp_dmm_2d
+python DMM_airfoil_2d.py -workspaceDir exp_dmm_2d -type naca -profile 3414 -reconIter 600 2>&1 | tee exp_dmm_2d/log.log
+# or to obtain a parameterization of CLARK-Y
+python DMM_airfoil_2d.py -workspaceDir exp_dmm_2d -type uiuc -profile clarky-il -reconIter 600 2>&1 | tee exp_dmm_2d/log.log
+
+# to train and obtain a LSM model
+mkdir exp_lsm_2d
+python LSM_airfoil_2d_train.py -workspaceDir exp_lsm_2d -trainingEpoch 21 -visualize 1 2>&1 | tee exp_lsm_2d/log.log
+```
 
 ## Citation
 If you find this project is useful, please cite:
