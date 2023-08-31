@@ -21,7 +21,7 @@ python DMM_airfoil_2d.py -workspaceDir exp_dmm_2d -type uiuc -profile clarky-il 
 
 # to train and obtain a LSM model
 mkdir exp_lsm_2d
-python LSM_airfoil_2d_train.py -workspaceDir exp_lsm_2d -trainingEpoch 21 -visualize 1 2>&1 | tee exp_lsm_2d/log.log
+python LSM_airfoil_2d_train.py -workspaceDir exp_lsm_2d -trainingEpoch 21 -visualize 2>&1 | tee exp_lsm_2d/log.log
 ```
 
 ## Citation
