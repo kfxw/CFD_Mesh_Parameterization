@@ -52,4 +52,4 @@ def uiuc(profile_dir, profile, nPoints):
     uniform_spacing_Y = torch.tensor( np.concatenate([upper_uniform_spacing_X, lower_uniform_spacing_X[::-1]]) )
 
     return torch.stack([half_cosine_spacing_X, half_cosine_spacing_Y], dim=1), \
-         torch.stack([uniform_spacing_X, uniform_spacing_Y], dim=1), \
+         torch.stack([uniform_spacing_X, uniform_spacing_Y], dim=1)
